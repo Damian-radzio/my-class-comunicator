@@ -1,4 +1,4 @@
-const App = () => {
+const Root = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -8,4 +8,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Root;
