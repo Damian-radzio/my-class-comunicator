@@ -1,10 +1,14 @@
+import { GlobalStyles } from '../assets/styles/GlobalStyles';
+import { theme } from '../assets/styles/theme';
+import { ThemeProvider } from 'styled-components';
 const Root = () => {
   return (
-    <div className="App">
-      <header className="App-header">
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <div className="App">
         <p>hej</p>
-      </header>
-    </div>
+      </div>
+    </ThemeProvider>
   );
 };
 
