@@ -1,9 +1,12 @@
+import { NavigationLink } from 'components/molecules/NavigationLink/NavigationLink';
 import React from 'react';
-import { Button } from 'components/atoms/button/Button';
+import { NavWrapper, NavLinksWrapper } from './Navigation.style';
 export const Navigation = () => {
   return (
-    <div>
-      <Button>123</Button>
-    </div>
+    <NavWrapper>
+      <NavLinksWrapper>
+        <NavigationLink />
+      </NavLinksWrapper>
+    </NavWrapper>
   );
 };
