@@ -3,9 +3,11 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
 html{
     box-sizing: border-box;
+    
 }
 body{
-    background-color: ${({ theme }) => theme.colors.white};
+    background-color: ${({ theme }) => theme.colors.creameWhite};
+    
 }
 *, *::after, *::before{
     box-sizing: inherit;
