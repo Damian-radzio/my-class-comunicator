@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const NavWrapper = styled.section`
   max-width: 400px;
-  width: 25%;
+  min-width: 400px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -10,14 +10,22 @@ export const NavWrapper = styled.section`
   border-right: 2px solid ${({ theme }) => theme.colors.grey};
 `;
 export const NavLinksWrapper = styled.div`
-  width: 95%;
+  position: relative;
+  width: 65%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: ${({ theme }) => theme.colors.white};
   margin: 0 auto;
-  border-bottom: 2px solid ${({ theme }) => theme.colors.grey};
   & button {
-    margin: 20px;
+    margin: 20px 0;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    left: -15%;
+    bottom: -10px;
+    width: 130%;
+    height: 2px;
+    background-color: ${({ theme }) => theme.colors.grey};
   }
 `;
