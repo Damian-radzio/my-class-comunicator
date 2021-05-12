@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 export const Button = styled.button`
   border: none;
-  min-width: 250px;
-  max-width: 250px;
+  min-width: 220px;
   padding: 10px 30px;
   border-radius: 30px;
   letter-spacing: 0.8px;

@@ -1,12 +1,14 @@
+import { Head } from 'components/atoms/Head/Head';
 import React from 'react';
-import { Wrapper } from './News.style';
+import { Wrapper, Articles } from './News.style';
+import { NewsArticle } from 'components/molecules/NewsArticle/NewsArticle';
 export const News = () => {
   return (
     <Wrapper>
-      <h2>nowości</h2>
-      <div>
-        <p>tutaj są nowe informacje</p>
-      </div>
+      <Head>Classmates news</Head>
+      <Articles>
+        <NewsArticle />
+      </Articles>
     </Wrapper>
   );
 };
