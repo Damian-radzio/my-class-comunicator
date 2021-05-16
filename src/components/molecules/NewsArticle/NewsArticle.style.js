@@ -22,6 +22,7 @@ export const ArticleHead = styled.h3`
   margin: 10px 20px;
   color: ${({ theme }) => theme.colors.darkGrey};
   span {
+    min-width: 30%;
     color: ${({ theme }) => theme.colors.darkGrey};
   }
 `;
