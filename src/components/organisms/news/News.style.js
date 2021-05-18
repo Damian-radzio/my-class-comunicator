@@ -22,5 +22,5 @@ export const Articles = styled.div`
   flex-wrap: wrap;
   justify-content: start;
   width: 100%;
-  margin-top: 10%;
+  margin-top: 5%;
 `;
