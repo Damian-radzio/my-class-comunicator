@@ -1,5 +1,5 @@
 import { StyledInput } from './Input.style';
-import { ApiCall } from 'data/ApiCall';
+import { ApiCall } from 'data/NewsApiCall';
 
 export const Input = ({ articles, setArticles }) => {
   const filterArticles = (e) => {

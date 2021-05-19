@@ -1,13 +1,15 @@
 import React from 'react';
 import { Button } from 'components/atoms/button/Button';
-import { ArticleHead, StyledArticle, Wrapper } from './NewsArticle.style';
+import { ArticleHead, StyledArticle } from './NewsArticle.style';
+import { ElementWrapper } from 'assets/styles/ComponentStyles/Components.style';
+import { Head } from 'components/atoms/Head/Head';
 
 export const NewsArticle = ({ articles }) => {
   return (
     <>
       {articles.length >= 1 ? (
         articles.map(({ title, date, content, image = null }) => (
-          <Wrapper key={title}>
+          <ElementWrapper key={title}>
             <ArticleHead>
               {title} <span>{date}</span>
             </ArticleHead>
@@ -17,10 +19,10 @@ export const NewsArticle = ({ articles }) => {
               {image ? <img src={image.url} alt="img" /> : null}
             </StyledArticle>
             {content.length < 250 ? null : <Button>więcej...</Button>}
-          </Wrapper>
+          </ElementWrapper>
         ))
       ) : (
-        <h3>loading...</h3>
+        <Head>loading...</Head>
       )}
     </>
   );

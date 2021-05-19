@@ -1,5 +1,5 @@
 import axios from 'axios';
-export const ApiCall = (setArticles) => {
+export const ApiCall = (setArticles, setHomeworks) => {
   axios
     .post(
       'https://graphql.datocms.com/',
@@ -15,7 +15,14 @@ export const ApiCall = (setArticles) => {
                 url
               }
             }
-          }`,
+            allHomeworks {
+              id
+              homeworkPage
+              homeworkInfo
+              deadline
+              subjectName
+            }
+            }`,
       },
       {
         headers: {
@@ -24,7 +31,8 @@ export const ApiCall = (setArticles) => {
       }
     )
     .then(({ data: { data } }) => {
-      setArticles(data.allArticles);
+      if (setArticles) setArticles(data.allArticles);
+      if (setHomeworks) setHomeworks(data.allHomeworks);
     })
     .catch((err) => console.log(err));
 };

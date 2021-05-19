@@ -7,9 +7,11 @@ export const NavigationLink = () => {
   return (
     <>
       {links.map((link) => (
-        <NavLink to={`/${link}`}>
-          <Button>{link}</Button>
-        </NavLink>
+        <div key={link}>
+          <NavLink to={`/${link}`}>
+            <Button>{link}</Button>
+          </NavLink>
+        </div>
       ))}
     </>
   );
