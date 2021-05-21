@@ -3,7 +3,11 @@ import { Switch, Route } from 'react-router-dom';
 import { Class } from 'components/organisms/Class/Class';
 import News from 'components/organisms/news/News';
 import styled from 'styled-components';
+<<<<<<< HEAD
 import { Homework } from 'components/organisms/Homework/Homework';
+=======
+import { Tests } from 'components/organisms/Tests/Tests';
+>>>>>>> master
 
 const Wrapper = styled.div`
   margin-left: 420px;
@@ -23,7 +27,7 @@ export const Dashboard = () => {
           <Homework />
         </Route>
         <Route path="/tests">
-          <div>tests</div>
+          <Tests />
         </Route>
       </Switch>
     </Wrapper>
