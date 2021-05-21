@@ -35,3 +35,9 @@ export const ElementWrapper = styled.div`
     }
   }
 `;
+export const StyledInfo = styled.span`
+  font-size: ${({ theme }) => theme.fontSize.l};
+  font-weight: lighter;
+  margin-top: 5px;
+  display: block;
+`;

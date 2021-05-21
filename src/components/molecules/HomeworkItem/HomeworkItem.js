@@ -2,11 +2,8 @@ import { ElementWrapper } from 'assets/styles/ComponentStyles/Components.style';
 import { Head } from 'components/atoms/Head/Head';
 import React from 'react';
 import { ArticleHead } from '../NewsArticle/NewsArticle.style';
-import {
-  StyledContent,
-  StyledSubsection,
-  StyledInfo,
-} from './HomeworkItem.style';
+import { StyledContent, StyledSubsection } from './HomeworkItem.style';
+import { StyledInfo } from 'assets/styles/ComponentStyles/Components.style';
 
 export const HomeworkItem = ({ homeworks }) => {
   return (

@@ -7,12 +7,6 @@ export const StyledContent = styled.div`
 `;
 export const StyledSubsection = styled.h2`
   color: ${({ theme }) => theme.colors.darkGrey};
-  font-size: ${({ theme }) => theme.fontSize.xl};
-  margin-bottom: 30px;
-`;
-export const StyledInfo = styled.span`
   font-size: ${({ theme }) => theme.fontSize.l};
-  font-weight: lighter;
-  margin-top: 5px;
-  display: block;
+  margin-bottom: 30px;
 `;
