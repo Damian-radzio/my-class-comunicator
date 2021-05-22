@@ -1,29 +1,18 @@
-import {
-  ElementWrapper,
-  ItemsWrapper,
-  StyledInfo,
-} from 'assets/styles/ComponentStyles/Components.style';
-import { Head } from 'components/atoms/Head/Head';
-import { ArticleHead } from 'components/molecules/NewsArticle/NewsArticle.style';
-import { InfoWrapper } from './Tests.style';
-import React from 'react';
+import { TestItem } from 'components/molecules/TestItem/TestItem';
+import { ItemsWrapper } from 'assets/styles/ComponentStyles/Components.style';
+import React, { useState, useEffect } from 'react';
+import { ApiCall } from 'data/ApiCall';
 
 export const Tests = () => {
+  const [testArticles, setTestArticles] = useState([]);
+
+  useEffect(() => {
+    ApiCall(null, null, setTestArticles);
+  }, []);
+
   return (
     <ItemsWrapper>
-      <ElementWrapper>
-        <ArticleHead>Chemia</ArticleHead>
-        <InfoWrapper>
-          <div>
-            <p>data: 21.09.2021</p>
-            <p>dział: Budowa atomu</p>
-          </div>
-          <StyledInfo>
-            lorem ipsum dolor sit amet consecteur ble bla lorem ipsum dolor sit
-            ammmmetn
-          </StyledInfo>
-        </InfoWrapper>
-      </ElementWrapper>
+      <TestItem testArticles={testArticles} />
     </ItemsWrapper>
   );
 };

@@ -1,4 +1,3 @@
-import { theme } from 'assets/styles/theme';
 import styled from 'styled-components';
 
 export const InfoWrapper = styled.div`
@@ -17,5 +16,8 @@ export const InfoWrapper = styled.div`
     justify-content: space-around;
     height: 30%;
     align-self: start;
+    & p {
+      padding: 3px 0;
+    }
   }
 `;

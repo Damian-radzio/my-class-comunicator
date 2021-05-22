@@ -4,12 +4,12 @@ import { ItemsWrapper } from 'assets/styles/ComponentStyles/Components.style';
 import { Wrapper } from './News.style';
 import { NewsArticle } from 'components/molecules/NewsArticle/NewsArticle';
 import { Input } from 'components/atoms/Input/Input';
-import { ApiCall } from 'data/NewsApiCall';
+import { ApiCall } from 'data/ApiCall';
 
 export const News = () => {
   const [articles, setArticles] = useState([]);
   useEffect(() => {
-    ApiCall(setArticles, null);
+    ApiCall(setArticles, null, null);
   }, []);
   return (
     <Wrapper>
@@ -23,5 +23,3 @@ export const News = () => {
     </Wrapper>
   );
 };
-
-export default News;

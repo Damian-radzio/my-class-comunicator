@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { Class } from 'components/organisms/Class/Class';
-import News from 'components/organisms/news/News';
+import { News } from 'components/organisms/news/News';
 import styled from 'styled-components';
 import { Homework } from 'components/organisms/Homework/Homework';
 import { Tests } from 'components/organisms/Tests/Tests';
