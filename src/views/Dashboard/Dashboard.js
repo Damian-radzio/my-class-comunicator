@@ -1,10 +1,11 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import { Class } from 'components/organisms/Class/Class';
 import { News } from 'components/organisms/news/News';
 import styled from 'styled-components';
 import { Homework } from 'components/organisms/Homework/Homework';
 import { Tests } from 'components/organisms/Tests/Tests';
+import { Home } from 'components/organisms/Home/Home';
 
 const Wrapper = styled.div`
   margin-left: 420px;
@@ -14,6 +15,12 @@ export const Dashboard = () => {
   return (
     <Wrapper>
       <Switch>
+        <Route exact path="/">
+          <Redirect to="/home" />
+        </Route>
+        <Route path="/home">
+          <Home />
+        </Route>
         <Route path="/class">
           <Class />
         </Route>
