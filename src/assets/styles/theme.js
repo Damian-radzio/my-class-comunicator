@@ -1,6 +1,6 @@
 export const theme = {
   colors: {
-    white: '#F9F9F9',
+    white: '#f0fcfe',
     creameWhite: '#eff6fc',
     grey: '#E6E7E9',
     darkGrey: '#77797C',
@@ -13,5 +13,6 @@ export const theme = {
     m: '16px',
     l: '20px',
     xl: '24px',
+    xxl: '32px',
   },
 };

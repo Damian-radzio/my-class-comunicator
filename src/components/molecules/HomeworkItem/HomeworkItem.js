@@ -4,6 +4,7 @@ import React from 'react';
 import { ArticleHead } from '../NewsArticle/NewsArticle.style';
 import { StyledContent, StyledSubsection } from './HomeworkItem.style';
 import { StyledInfo } from 'assets/styles/ComponentStyles/Components.style';
+import { InfoWrapper } from '../TestItem/TestsItem.style';
 
 export const HomeworkItem = ({ homeworks }) => {
   return (
@@ -13,21 +14,13 @@ export const HomeworkItem = ({ homeworks }) => {
           ({ id, subjectName, homeworkInfo, homeworkPage, deadline }) => (
             <ElementWrapper key={id}>
               <ArticleHead>{subjectName}</ArticleHead>
-              <StyledContent>
-                <StyledSubsection>
-                  zadanie
-                  <StyledInfo>{homeworkInfo}</StyledInfo>
-                </StyledSubsection>
-                {homeworkPage ? (
-                  <StyledSubsection>
-                    strona
-                    <StyledInfo>{homeworkPage}</StyledInfo>
-                  </StyledSubsection>
-                ) : null}
-                <StyledSubsection>
-                  termin wykonania <StyledInfo>{deadline}</StyledInfo>
-                </StyledSubsection>
-              </StyledContent>
+              <InfoWrapper>
+                <div>
+                  {homeworkPage ? <p>strona: {homeworkPage}</p> : null}
+                  <p>termin: {deadline}</p>
+                </div>
+                <StyledInfo>{homeworkInfo}</StyledInfo>
+              </InfoWrapper>
             </ElementWrapper>
           )
         )

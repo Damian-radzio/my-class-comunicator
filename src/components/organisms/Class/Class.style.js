@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   width: 40%;
   height: 85vh;
   min-width: 450px;
-  margin: 7.5vh auto;
+  margin: 3vh auto;
   border-radius: 20px;
   border-bottom-right-radius: 0px;
   box-shadow: 0 0 10px 3px ${({ theme }) => theme.colors.grey};
@@ -23,7 +23,7 @@ export const UsersWrapper = styled.div`
   align-items: center;
   width: 100%;
   min-height: 500px;
-  height: 90%;
+  height: 100%;
   overflow-y: scroll;
   /* width */
   ::-webkit-scrollbar {
