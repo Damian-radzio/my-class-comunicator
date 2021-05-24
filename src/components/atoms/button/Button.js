@@ -16,8 +16,8 @@ export const Button = styled.button`
   &:hover {
     box-shadow: 0 0 10px -2px ${({ theme }) => theme.colors.lightBlue};
   }
-  &:focus {
-    outline: none;
-    border: 1px solid ${({ theme }) => theme.colors.lightBlue};
+  &::focus{
+    outline: 1px solid green;
+  }
   }
 `;

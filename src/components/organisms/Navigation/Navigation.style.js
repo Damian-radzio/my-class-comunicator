@@ -20,6 +20,7 @@ export const NavLinksWrapper = styled.div`
   flex-direction: column;
   justify-content: space-around;
   margin: 0 auto;
+  outline: none;
   & button {
     margin: 20px 0;
   }
@@ -31,5 +32,10 @@ export const NavLinksWrapper = styled.div`
     width: 130%;
     height: 2px;
     background-color: ${({ theme }) => theme.colors.grey};
+  }
+
+  .active-link button {
+    outline: none;
+    box-shadow: 0px 0px 8px 1px ${({ theme }) => theme.colors.lightBlue};
   }
 `;
