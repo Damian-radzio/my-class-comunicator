@@ -2,7 +2,7 @@ import {
   ElementWrapper,
   StyledInfo,
 } from 'assets/styles/ComponentStyles/Components.style';
-import { Head, HeadWrapper } from 'components/atoms/Head/Head';
+import { Head } from 'components/atoms/Head/Head';
 import { ArticleHead } from 'components/molecules/NewsArticle/NewsArticle.style';
 import { InfoWrapper } from './TestsItem.style';
 

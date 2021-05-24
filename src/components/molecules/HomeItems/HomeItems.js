@@ -1,7 +1,5 @@
-import { DateItem } from 'components/atoms/Date/DateItem';
 import { StyledInfoSection, Wrapper } from './HomeItems.style';
 import React from 'react';
-import { Head, HeadWrapper } from 'components/atoms/Head/Head';
 
 export const HomeItems = () => {
   return (
