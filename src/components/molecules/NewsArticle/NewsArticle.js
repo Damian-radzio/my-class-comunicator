@@ -15,7 +15,8 @@ export const NewsArticle = ({ articles }) => {
             </ArticleHead>
 
             <StyledArticle>
-              {content}
+              <p className="max-lines">{content}</p>
+
               {image ? <img src={image.url} alt="img" /> : null}
             </StyledArticle>
             {content.length < 250 ? null : <Button>więcej...</Button>}
