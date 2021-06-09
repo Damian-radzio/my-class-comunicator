@@ -1,6 +1,5 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import { Class } from 'components/organisms/Class/Class';
 import { News } from 'components/organisms/news/News';
 import styled from 'styled-components';
 import { Homework } from 'components/organisms/Homework/Homework';
@@ -20,9 +19,6 @@ export const Dashboard = () => {
         </Route>
         <Route path="/home">
           <Home />
-        </Route>
-        <Route path="/class">
-          <Class />
         </Route>
         <Route path="/news">
           <News />
