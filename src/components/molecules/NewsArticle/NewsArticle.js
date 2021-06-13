@@ -3,7 +3,6 @@ import { Button } from 'components/atoms/button/Button';
 import { ArticleHead, StyledArticle } from './NewsArticle.style';
 import { ElementWrapper } from 'assets/styles/ComponentStyles/Components.style';
 import { Head } from 'components/atoms/Head/Head';
-import { NavLink } from 'react-router-dom';
 export const NewsArticle = ({ articles, setArticles }) => {
   const showNews = (e) => {
     const selectedNews = {
