@@ -11,11 +11,11 @@ export const ElementWrapper = styled.div`
   overflow: hidden;
   position: relative;
   flex: 1 0 21%;
-  min-width: 400px;
-  max-width: 450px;
-  min-height: 250px;
-  max-height: 300px;
-  margin: 20px;
+  min-width: ${({ isBig }) => (isBig ? '650px' : '400px')};
+  max-width: ${({ isBig }) => (isBig ? '650px' : '450px')};
+  min-height: ${({ isBig }) => (isBig ? '350px' : '250px')};
+  max-height: ${({ isBig }) => (isBig ? '400px' : '300px')};
+  margin: ${({ isBig }) => (isBig ? '0 20%' : '20px')};
   border-radius: 20px;
   box-shadow: 0 0 10px 3px ${({ theme }) => theme.colors.grey};
   background-color: ${({ theme }) => theme.colors.white};

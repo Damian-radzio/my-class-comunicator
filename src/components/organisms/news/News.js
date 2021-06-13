@@ -18,7 +18,7 @@ export const News = () => {
         <Input articles={articles} setArticles={setArticles} />
       </HeadWrapper>
       <ItemsWrapper>
-        <NewsArticle articles={articles} />
+        <NewsArticle articles={articles} setArticles={setArticles} />
       </ItemsWrapper>
     </Wrapper>
   );

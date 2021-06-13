@@ -11,6 +11,7 @@ export const ArticleHead = styled.h3`
   }
   animation: show 0.4s 0.2s ease-out both;
 `;
+
 export const StyledArticle = styled.article`
   animation: show 0.4s 0.4s ease-out both;
   @keyframes show {
@@ -26,8 +27,8 @@ export const StyledArticle = styled.article`
   display: flex;
   align-items: start;
   text-align: center;
-  padding: 10px 10px;
-  max-height: 120px;
+  padding: ${({ isBig }) => (isBig ? '30px 20px' : '10px 10px')};
+  max-height: ${({ isBig }) => (isBig ? '300px' : '120px')};
   overflow: hidden;
   color: ${({ theme }) => theme.colors.darkGrey};
   img {
