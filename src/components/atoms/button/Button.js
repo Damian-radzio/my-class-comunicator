@@ -19,5 +19,8 @@ export const Button = styled.button`
   &::focus{
     outline: 1px solid green;
   }
+  img {
+    width: 15%;
+  }
   }
 `;
