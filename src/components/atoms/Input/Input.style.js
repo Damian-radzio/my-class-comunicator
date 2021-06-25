@@ -9,4 +9,9 @@ export const StyledInput = styled.input`
   &:focus {
     box-shadow: 0 0 6px 1px ${({ theme }) => theme.colors.lightBlue};
   }
+  @media (max-width: 1024px) {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
 `;

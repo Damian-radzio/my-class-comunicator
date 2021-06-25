@@ -20,7 +20,7 @@ export const Input = ({ articles, setArticles }) => {
   };
   return (
     <StyledInput
-      placeholder="wpisz tytuł artykułu"
+      placeholder="enter the title of the article"
       type="text"
       onChange={filterArticles}
     />

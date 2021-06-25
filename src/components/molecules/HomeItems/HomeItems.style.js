@@ -6,6 +6,12 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    height: 75vh;
+  }
 `;
 export const StyledInfoSection = styled.section`
   text-align: center;
@@ -20,6 +26,12 @@ export const StyledInfoSection = styled.section`
       font-weight: 700;
       padding: 20px;
       display: block;
+      @media (max-width: 1024px) {
+        padding: 8px;
+      }
+    }
+    @media (max-width: 1024px) {
+      margin-bottom: 20px;
     }
   }
 `;

@@ -41,7 +41,7 @@ export const NavigationLink = (e) => {
         : Links.map(({ img, id }) => (
             <div key={id}>
               <NavLink activeClassName="active-link" to={id}>
-                <Button className={id}>
+                <Button isMobile className={id}>
                   <img src={img} alt={id} />
                 </Button>
               </NavLink>

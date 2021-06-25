@@ -10,6 +10,9 @@ export const ArticleHead = styled.h3`
     color: ${({ theme }) => theme.colors.darkGrey};
   }
   animation: show 0.4s 0.2s ease-out both;
+  @media (max-width: 1024px) {
+    margin: 20px 10px;
+  }
 `;
 
 export const StyledArticle = styled.article`

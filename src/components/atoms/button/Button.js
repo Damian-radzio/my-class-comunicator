@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Button = styled.button`
   border: none;
-  min-width: 220px;
+  min-width: 85%;
   padding: 10px 30px;
   border-radius: 30px;
   letter-spacing: 0.8px;
@@ -20,7 +20,16 @@ export const Button = styled.button`
     outline: 1px solid green;
   }
   img {
-    width: 15%;
+    width: 15px;
   }
+  
+  @media(max-width: 360px){
+    min-width: 50px;
+  }
+  @media (max-width: 1024px) {
+    min-width: 60px;
+    padding: 10px 25px;
+  }
+  
   }
 `;

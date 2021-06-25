@@ -4,13 +4,19 @@ export const NavWrapper = styled.section`
   position: fixed;
   left: 0;
   top: 0;
-  max-width: 400px;
   min-width: 400px;
-  height: 100vh;
+  max-width: 420px;
+  height: 10vh;
   display: flex;
   flex-direction: column;
   background-color: ${({ theme }) => theme.colors.creameWhite};
   border-right: 2px solid ${({ theme }) => theme.colors.grey};
+  @media (max-width: 1024px) {
+    position: static;
+    min-width: 100%;
+    max-width: 100%;
+    border-right: none;
+  }
 `;
 export const NavLinksWrapper = styled.div`
   position: relative;
@@ -37,5 +43,12 @@ export const NavLinksWrapper = styled.div`
   .active-link button {
     outline: none;
     box-shadow: 0px 0px 8px 1px ${({ theme }) => theme.colors.lightBlue};
+  }
+  @media (max-width: 1024px) {
+    width: 85%;
+    flex-direction: row;
+  }
+  @media (max-width: 300px) {
+    width: 98%;
   }
 `;

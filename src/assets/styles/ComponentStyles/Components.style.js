@@ -34,6 +34,15 @@ export const ElementWrapper = styled.div`
       opacity: 1;
     }
   }
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    justify-content: space-around;
+    margin: ${({ isBig }) => (isBig ? '20px auto' : '20px auto')};
+    min-width: ${({ isBig }) => (isBig ? '320px' : '250px')};
+    max-width: ${({ isBig }) => (isBig ? '98%' : '95%')};
+    min-height: ${({ isBig }) => (isBig ? '320px' : '300px')};
+    max-height: ${({ isBig }) => (isBig ? '320px' : '350px')};
+  }
 `;
 export const StyledInfo = styled.span`
   font-size: ${({ theme }) => theme.fontSize.l};
