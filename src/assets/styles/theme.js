@@ -5,6 +5,7 @@ export const theme = {
     grey: '#E6E7E9',
     darkGrey: '#77797C',
     lightBlue: '#A0C0FA',
+    facebookBlue: '#3b5998',
     red: '#990000',
     green: '#009900',
   },
