@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/my-class-comunicator/static/js/main.bd26b303.chunk.js",
-    "main.js.map": "/my-class-comunicator/static/js/main.bd26b303.chunk.js.map",
+    "main.js": "/my-class-comunicator/static/js/main.2022a65a.chunk.js",
+    "main.js.map": "/my-class-comunicator/static/js/main.2022a65a.chunk.js.map",
     "runtime-main.js": "/my-class-comunicator/static/js/runtime-main.ec66f89a.js",
     "runtime-main.js.map": "/my-class-comunicator/static/js/runtime-main.ec66f89a.js.map",
     "static/js/2.2128a69c.chunk.js": "/my-class-comunicator/static/js/2.2128a69c.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.ec66f89a.js",
     "static/js/2.2128a69c.chunk.js",
-    "static/js/main.bd26b303.chunk.js"
+    "static/js/main.2022a65a.chunk.js"
   ]
 }
