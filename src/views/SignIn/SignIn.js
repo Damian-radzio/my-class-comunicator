@@ -23,7 +23,9 @@ export const SignIn = () => {
           data-layout="default"
           data-auto-logout-link="false"
           data-use-continue-as="false"
-        ></div>
+        >
+          zaloguj
+        </div>
       )}
     </>
   );
