@@ -1,6 +1,6 @@
 {
   "name": "my-class-comunicator",
-  "homepage": " https://damian-radzio.github.io/my-class-comunicator/",
+  "homepage": " https://damian-radzio.github.io/my-class-comunicator/public",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
