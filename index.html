@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Web site created for classmates" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <title>MyClass</title>
+  </head>
+  <body>
+    <div id="root">
+      <script>
+        window.fbAsyncInit = function () {
+          FB.init({
+            appId: 'your-app-id',
+            autoLogAppEvents: true,
+            xfbml: true,
+            version: 'v11.0',
+          });
+        };
+      </script>
+      <div id="fb-root"></div>
+      <script
+        async
+        defer
+        crossorigin="anonymous"
+        src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v11.0&appId=398696038205344&autoLogAppEvents=1"
+        nonce="o03waInt"
+      ></script>
+    </div>
+  </body>
+</html>
