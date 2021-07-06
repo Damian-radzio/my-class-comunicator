@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/my-class-comunicator/public/static/js/main.aa6ef916.chunk.js",
-    "main.js.map": "/my-class-comunicator/public/static/js/main.aa6ef916.chunk.js.map",
-    "runtime-main.js": "/my-class-comunicator/public/static/js/runtime-main.231448bd.js",
-    "runtime-main.js.map": "/my-class-comunicator/public/static/js/runtime-main.231448bd.js.map",
-    "static/js/2.c07f2e3d.chunk.js": "/my-class-comunicator/public/static/js/2.c07f2e3d.chunk.js",
-    "static/js/2.c07f2e3d.chunk.js.map": "/my-class-comunicator/public/static/js/2.c07f2e3d.chunk.js.map",
-    "index.html": "/my-class-comunicator/public/index.html",
-    "static/js/2.c07f2e3d.chunk.js.LICENSE.txt": "/my-class-comunicator/public/static/js/2.c07f2e3d.chunk.js.LICENSE.txt"
+    "main.js": "/my-class-comunicator/static/js/main.aa6ef916.chunk.js",
+    "main.js.map": "/my-class-comunicator/static/js/main.aa6ef916.chunk.js.map",
+    "runtime-main.js": "/my-class-comunicator/static/js/runtime-main.ec66f89a.js",
+    "runtime-main.js.map": "/my-class-comunicator/static/js/runtime-main.ec66f89a.js.map",
+    "static/js/2.3d1af733.chunk.js": "/my-class-comunicator/static/js/2.3d1af733.chunk.js",
+    "static/js/2.3d1af733.chunk.js.map": "/my-class-comunicator/static/js/2.3d1af733.chunk.js.map",
+    "index.html": "/my-class-comunicator/index.html",
+    "static/js/2.3d1af733.chunk.js.LICENSE.txt": "/my-class-comunicator/static/js/2.3d1af733.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.231448bd.js",
-    "static/js/2.c07f2e3d.chunk.js",
+    "static/js/runtime-main.ec66f89a.js",
+    "static/js/2.3d1af733.chunk.js",
     "static/js/main.aa6ef916.chunk.js"
   ]
 }
