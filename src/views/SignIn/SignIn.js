@@ -13,19 +13,7 @@ export const SignIn = () => {
           <Dashboard />
         </>
       ) : (
-        // <LoginButton>Zaloguj się przez Facebook</LoginButton>
-
-        <div
-          class="fb-login-button"
-          data-width=""
-          data-size="large"
-          data-button-type="continue_with"
-          data-layout="default"
-          data-auto-logout-link="false"
-          data-use-continue-as="false"
-        >
-          zaloguj
-        </div>
+        <LoginButton>Zaloguj się przez Facebook</LoginButton>
       )}
     </>
   );
