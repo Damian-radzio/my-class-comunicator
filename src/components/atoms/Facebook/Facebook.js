@@ -11,6 +11,7 @@ export const Facebook = ({ setLogged }) => {
     console.log('clicked');
   };
   const responseFacebook = (response) => {
+    console.log(response);
     setState({
       isLoggedIn: true,
       userID: response.userID,
