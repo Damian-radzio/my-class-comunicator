@@ -1,4 +1,3 @@
-import { Button } from 'components/atoms/button/Button';
 import styled from 'styled-components';
 export const LoginButton = styled.button`
   position: absolute;
