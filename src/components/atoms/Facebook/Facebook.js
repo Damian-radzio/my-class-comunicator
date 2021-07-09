@@ -21,7 +21,7 @@ export const Facebook = ({ setLogged }) => {
   };
   let fbContent;
   if (state.isLoggedIn) {
-    // setLogged(true);
+    setLogged(true);
   } else {
     fbContent = (
       <FacebookLogin
