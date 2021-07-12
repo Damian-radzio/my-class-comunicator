@@ -23,7 +23,7 @@ export const Facebook = ({ setLogged }) => {
   } else {
     fbContent = (
       <FacebookLogin
-        appId="398696038205344"
+        appId="175871004592943"
         autoLoad={true}
         fields="name,email"
         callback={responseFacebook}
