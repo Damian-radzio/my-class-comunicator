@@ -3,6 +3,8 @@ import { Button } from 'components/atoms/button/Button';
 import { ArticleHead, StyledArticle } from './NewsArticle.style';
 import { ElementWrapper } from 'assets/styles/ComponentStyles/Components.style';
 import { Head } from 'components/atoms/Head/Head';
+import { ApiCall } from 'data/ApiCall';
+
 export const NewsArticle = ({ articles, setArticles }) => {
   const showNews = (e) => {
     const selectedNews = {
@@ -12,7 +14,9 @@ export const NewsArticle = ({ articles, setArticles }) => {
       image: null,
     };
     setArticles([selectedNews]);
-    console.log(articles);
+  };
+  const backToPreviousView = () => {
+    ApiCall(setArticles, null, null);
   };
   return (
     <>
@@ -35,16 +39,21 @@ export const NewsArticle = ({ articles, setArticles }) => {
           ))
         ) : (
           articles.map(({ title, date, content, image = null }) => (
-            <ElementWrapper key={title} isBig>
-              <ArticleHead>
-                {title} <span>{date}</span>
-              </ArticleHead>
+            <>
+              <ElementWrapper key={title} isBig>
+                <Button className="back" onClick={backToPreviousView}>
+                  back
+                </Button>
+                <ArticleHead>
+                  {title} <span>{date}</span>
+                </ArticleHead>
 
-              <StyledArticle isBig>
-                {content}
-                {image ? <img src={image.url} alt="img" /> : null}
-              </StyledArticle>
-            </ElementWrapper>
+                <StyledArticle isBig>
+                  {content}
+                  {image ? <img src={image.url} alt="img" /> : null}
+                </StyledArticle>
+              </ElementWrapper>
+            </>
           ))
         )
       ) : (

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 export const ItemsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -20,8 +19,11 @@ export const ElementWrapper = styled.div`
   box-shadow: 0 0 10px 3px ${({ theme }) => theme.colors.grey};
   background-color: ${({ theme }) => theme.colors.white};
   text-align: center;
-  button {
-    margin-top: 30px;
+  .back {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    min-width: 40%;
   }
   animation: show 0.4s 0.1s ease-out both;
   @keyframes show {

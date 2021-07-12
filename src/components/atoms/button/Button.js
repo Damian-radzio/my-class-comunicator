@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ApiCall } from 'data/ApiCall';
 
 export const Button = styled.button`
   border: none;
@@ -13,6 +14,7 @@ export const Button = styled.button`
   color: ${({ theme }) => theme.colors.darkGrey};
   background-color: ${({ theme }) => theme.colors.white};
   box-shadow: 0 0 20px 4px ${({ theme }) => theme.colors.grey};
+  margin-top: 5%;
   &:hover {
     box-shadow: 0 0 10px -2px ${({ theme }) => theme.colors.lightBlue};
   }

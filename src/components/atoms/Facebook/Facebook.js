@@ -7,9 +7,7 @@ export const Facebook = ({ setLogged }) => {
     name: '',
     email: '',
   });
-  const componentClicked = () => {
-    console.log('clicked');
-  };
+
   const responseFacebook = (response) => {
     console.log(response);
     setState({
@@ -28,7 +26,6 @@ export const Facebook = ({ setLogged }) => {
         appId="398696038205344"
         autoLoad={true}
         fields="name,email"
-        onClick={componentClicked}
         callback={responseFacebook}
       />
     );
