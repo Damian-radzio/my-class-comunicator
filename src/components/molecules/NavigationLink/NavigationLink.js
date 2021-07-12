@@ -6,24 +6,22 @@ import Home from 'assets/svg/Home.png';
 import Homework from 'assets/svg/Homework.png';
 import Tests from 'assets/svg/Test.png';
 export const NavigationLink = (e) => {
+  const [Links, UseLinks] = useState([]);
   const mobileLinks = [
     { img: Home, id: 'Home' },
     { img: News, id: 'News' },
     { img: Homework, id: 'Homework' },
     { img: Tests, id: 'Tests' },
   ];
+
   const desktopLinks = ['Home', 'News', 'Homework', 'Tests'];
-  const [Links, UseLinks] = useState(mobileLinks);
-  const changeLinks = () => {
+  useEffect(() => {
     if (document.body.clientWidth > 1024) {
       UseLinks(desktopLinks);
     } else {
       UseLinks(mobileLinks);
     }
-  };
-  useEffect(() => {
-    window.addEventListener('resize', changeLinks);
-  });
+  }, []);
   return (
     <>
       {document.body.clientWidth > 1024
@@ -41,7 +39,7 @@ export const NavigationLink = (e) => {
         : Links.map(({ img, id }) => (
             <div key={id}>
               <NavLink activeClassName="active-link" to={id}>
-                <Button isMobile className={id}>
+                <Button className={id}>
                   <img src={img} alt={id} />
                 </Button>
               </NavLink>
