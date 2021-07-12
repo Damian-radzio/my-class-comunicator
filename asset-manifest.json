@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/my-class-comunicator/static/js/main.6a3b0388.chunk.js",
-    "main.js.map": "/my-class-comunicator/static/js/main.6a3b0388.chunk.js.map",
+    "main.js": "/my-class-comunicator/static/js/main.adb5a163.chunk.js",
+    "main.js.map": "/my-class-comunicator/static/js/main.adb5a163.chunk.js.map",
     "runtime-main.js": "/my-class-comunicator/static/js/runtime-main.ec66f89a.js",
     "runtime-main.js.map": "/my-class-comunicator/static/js/runtime-main.ec66f89a.js.map",
-    "static/js/2.3d1af733.chunk.js": "/my-class-comunicator/static/js/2.3d1af733.chunk.js",
-    "static/js/2.3d1af733.chunk.js.map": "/my-class-comunicator/static/js/2.3d1af733.chunk.js.map",
+    "static/js/2.e66baf06.chunk.js": "/my-class-comunicator/static/js/2.e66baf06.chunk.js",
+    "static/js/2.e66baf06.chunk.js.map": "/my-class-comunicator/static/js/2.e66baf06.chunk.js.map",
     "index.html": "/my-class-comunicator/index.html",
-    "static/js/2.3d1af733.chunk.js.LICENSE.txt": "/my-class-comunicator/static/js/2.3d1af733.chunk.js.LICENSE.txt"
+    "static/js/2.e66baf06.chunk.js.LICENSE.txt": "/my-class-comunicator/static/js/2.e66baf06.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ec66f89a.js",
-    "static/js/2.3d1af733.chunk.js",
-    "static/js/main.6a3b0388.chunk.js"
+    "static/js/2.e66baf06.chunk.js",
+    "static/js/main.adb5a163.chunk.js"
   ]
 }
