@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # My-class-comunicator
 
 ## This project is React App, creating for my classmates
